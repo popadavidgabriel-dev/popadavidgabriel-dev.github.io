@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Coming Soon</h1>
+        <a id="instagram-link" href="https://www.instagram.com/thatphotoguy.jpeg" target="_blank" class="instagram-button">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+    </div>
+
+ 
+    <script>
+  
+        window.onload = function() {
+ 
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (isMobile) {
+
+                const instagramButton = document.getElementById('instagram-link');
+      instagramButton.href = 'instagram://user?username=thatphotoguy.jpeg';
+            }
+ 
+        };
+    </script>
+</body>
+</html>
